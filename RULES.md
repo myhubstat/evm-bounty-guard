@@ -9,3 +9,4 @@
 - **EVM-012 (`eip7702-delegation-guard`):** Detects `tx.origin == msg.sender` checks that break under EIP-7702 delegated EOAs.
 - **EVM-013 (`view-reentrancy-oracle`):** Flags `get_virtual_price()` and pool invariant reads during unguarded ETH/ERC-223 callbacks.
 - **EVM-014 (`permit2-witness-validation`):** Verifies `permitWitnessTransferFrom` binds `msg.sender` and target recipient in the EIP-712 witness struct.
+- **EVM-015 (`merkle-double-hash-leaf`):** Flags `keccak256(abi.encodePacked(account, amount))` leaves without double hashing (`keccak256(bytes.concat(keccak256(...)))`).
