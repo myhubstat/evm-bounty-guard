@@ -17,3 +17,4 @@
 - **EVM-020 (`eip712-cached-chainid`):** Flags immutable `DOMAIN_SEPARATOR` caches that do not recompute when `block.chainid` changes on hard forks.
 - **EVM-021 (`fot-balance-delta`):** Detects `transferFrom(sender, address(this), amount)` calls that credit `amount` without measuring `balanceAfter - balanceBefore`.
 - **EVM-022 (`self-transfer-guard`):** Detects custom `transfer(to, amount)` implementations that load cached `fromBalance` and `toBalance` before writing when `from == to`.
+- **EVM-023 (`uups-impl-initializer`):** Verifies `_disableInitializers()` is called in the constructor of every `UUPSUpgradeable` implementation.
