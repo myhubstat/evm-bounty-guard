@@ -6,3 +6,4 @@
 - **EVM-009 (`erc4626-share-inflation`):** Detects `totalAssets()` / `convertToShares()` vault formulas without virtual share/asset offsets.
 - **EVM-010 (`eip1153-transient-guard`):** Audits `tload`/`tstore` reentrancy locks across delegatecall boundaries.
 - **EVM-011 (`uni-v4-hook-delta`):** Verifies `beforeSwap`/`afterSwap` hook return deltas cannot leave unsettled currency balances.
+- **EVM-012 (`eip7702-delegation-guard`):** Detects `tx.origin == msg.sender` checks that break under EIP-7702 delegated EOAs.
