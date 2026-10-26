@@ -14,3 +14,4 @@
 - **EVM-017 (`chainlink-stale-round`):** Checks `updatedAt != 0 && block.timestamp - updatedAt <= maxDelay && answer > minAnswer`.
 - **EVM-018 (`safe-mint-reentrancy`):** Detects state updates placed after `_safeMint` or `_safeTransferFrom` receiver hooks.
 - **EVM-019 (`diamond-slot-collision`):** Verifies `keccak256("...") - 1` namespace slots across EIP-2535 facets.
+- **EVM-020 (`eip712-cached-chainid`):** Flags immutable `DOMAIN_SEPARATOR` caches that do not recompute when `block.chainid` changes on hard forks.
