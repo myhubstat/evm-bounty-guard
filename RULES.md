@@ -12,3 +12,4 @@
 - **EVM-015 (`merkle-double-hash-leaf`):** Flags `keccak256(abi.encodePacked(account, amount))` leaves without double hashing (`keccak256(bytes.concat(keccak256(...)))`).
 - **EVM-016 (`l2-sequencer-grace-period`):** Ensures Base/Arbitrum/Optimism Chainlink price reads check sequencer uptime and `GRACE_PERIOD_TIME`.
 - **EVM-017 (`chainlink-stale-round`):** Checks `updatedAt != 0 && block.timestamp - updatedAt <= maxDelay && answer > minAnswer`.
+- **EVM-018 (`safe-mint-reentrancy`):** Detects state updates placed after `_safeMint` or `_safeTransferFrom` receiver hooks.
