@@ -10,3 +10,4 @@
 - **EVM-013 (`view-reentrancy-oracle`):** Flags `get_virtual_price()` and pool invariant reads during unguarded ETH/ERC-223 callbacks.
 - **EVM-014 (`permit2-witness-validation`):** Verifies `permitWitnessTransferFrom` binds `msg.sender` and target recipient in the EIP-712 witness struct.
 - **EVM-015 (`merkle-double-hash-leaf`):** Flags `keccak256(abi.encodePacked(account, amount))` leaves without double hashing (`keccak256(bytes.concat(keccak256(...)))`).
+- **EVM-016 (`l2-sequencer-grace-period`):** Ensures Base/Arbitrum/Optimism Chainlink price reads check sequencer uptime and `GRACE_PERIOD_TIME`.
