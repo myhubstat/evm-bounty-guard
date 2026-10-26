@@ -19,3 +19,4 @@
 - **EVM-022 (`self-transfer-guard`):** Detects custom `transfer(to, amount)` implementations that load cached `fromBalance` and `toBalance` before writing when `from == to`.
 - **EVM-023 (`uups-impl-initializer`):** Verifies `_disableInitializers()` is called in the constructor of every `UUPSUpgradeable` implementation.
 - **EVM-024 (`aa-paymaster-postop`):** Audits `validatePaymasterUserOp` and `postOp` gas limits under ERC-4337.
+- **EVM-025 (`eip1967-beacon-slot`):** Verifies EIP-1967 beacon and admin storage slot constants.
