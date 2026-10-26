@@ -4,3 +4,4 @@
 - **EVM-007 (`dex223-quoteswap-retdata-length`):** Detects `delegatecall` quote wrappers checking `retdata.length >= 32` instead of `retdata.length == 32`.
 - **EVM-008 (`protocol-fee-collector-gas-cap`):** Detects hardcoded `collectProtocol{gas: 300_000}` calls on pools that trigger lazy `CREATE2` token wrapper deployment.
 - **EVM-009 (`erc4626-share-inflation`):** Detects `totalAssets()` / `convertToShares()` vault formulas without virtual share/asset offsets.
+- **EVM-010 (`eip1153-transient-guard`):** Audits `tload`/`tstore` reentrancy locks across delegatecall boundaries.
