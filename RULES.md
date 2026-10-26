@@ -20,3 +20,4 @@
 - **EVM-023 (`uups-impl-initializer`):** Verifies `_disableInitializers()` is called in the constructor of every `UUPSUpgradeable` implementation.
 - **EVM-024 (`aa-paymaster-postop`):** Audits `validatePaymasterUserOp` and `postOp` gas limits under ERC-4337.
 - **EVM-025 (`eip1967-beacon-slot`):** Verifies EIP-1967 beacon and admin storage slot constants.
+- **EVM-026 (`erc3156-flash-initiator`):** Ensures `onFlashLoan` verifies both `msg.sender == pool` and `initiator == address(this)`.
