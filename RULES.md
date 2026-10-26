@@ -21,3 +21,4 @@
 - **EVM-024 (`aa-paymaster-postop`):** Audits `validatePaymasterUserOp` and `postOp` gas limits under ERC-4337.
 - **EVM-025 (`eip1967-beacon-slot`):** Verifies EIP-1967 beacon and admin storage slot constants.
 - **EVM-026 (`erc3156-flash-initiator`):** Ensures `onFlashLoan` verifies both `msg.sender == pool` and `initiator == address(this)`.
+- **EVM-027 (`ecdsa-s-malleability`):** Flags raw `ecrecover` calls that do not enforce `uint256(s) <= SECP256K1_N / 2` and `v in {27, 28}`.
