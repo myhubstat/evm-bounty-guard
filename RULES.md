@@ -13,3 +13,4 @@
 - **EVM-016 (`l2-sequencer-grace-period`):** Ensures Base/Arbitrum/Optimism Chainlink price reads check sequencer uptime and `GRACE_PERIOD_TIME`.
 - **EVM-017 (`chainlink-stale-round`):** Checks `updatedAt != 0 && block.timestamp - updatedAt <= maxDelay && answer > minAnswer`.
 - **EVM-018 (`safe-mint-reentrancy`):** Detects state updates placed after `_safeMint` or `_safeTransferFrom` receiver hooks.
+- **EVM-019 (`diamond-slot-collision`):** Verifies `keccak256("...") - 1` namespace slots across EIP-2535 facets.
